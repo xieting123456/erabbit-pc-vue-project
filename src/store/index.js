@@ -1,14 +1,20 @@
-import { createStore } from 'vuex'
+import {
+  createStore
+} from 'vuex'
+
+const moduleA = {
+  namespaced: true,
+  state: {
+    username: '张三'
+  }
+}
+
+const moduleB = {}
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+
   modules: {
+    moduleA,
+    moduleB
   }
 })
